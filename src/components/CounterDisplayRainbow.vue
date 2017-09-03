@@ -1,6 +1,6 @@
 <template>
-  <marquee>
-    <span v-for="i in 40" :key="i">
+  <marquee ref="counterMarquee">
+    <span ref="countSpan" v-for="i in 40" :key="i">
       {{count}}
     </span>
   </marquee>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>Tally Counter</h1>
-    <CounterDisplayPlain
+    <p>Tally Counter</p>
+    <CounterDisplayRainbow
       ref="counterDisplay"
       :count="count"
-    ></CounterDisplayPlain>
+    ></CounterDisplayRainbow>
     <CounterControlsButton
       ref="counterControls"
       @add="add"
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import CounterDisplayPlain from './CounterDisplayPlain';
+import CounterDisplayRainbow from './CounterDisplayRainbow';
 import CounterControlsButton from './CounterControlsButton';
 
 export default {
   components: {
-    CounterDisplayPlain,
+    CounterDisplayRainbow,
     CounterControlsButton
   },
   data() {

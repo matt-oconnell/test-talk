@@ -10,7 +10,10 @@ describe('TallyCounter.vue', () => {
     // We *trust* that counter display will handle the count prop.
     // Some may say it's outside of the TallyCounter's responsibility to reach into 
     // the counterDisplay to ensure it's rendered within an <h1> or used for something // completely different
-    expect(counterDisplay.$props.count).to.equal(vm.count)
+    expect(counterDisplay.$props.count).to.equal(0)
+
+    // important! below is not safe
+    // expect(counterDisplay.$props.count).to.equal(vm.count)
   })
 
   it('should add to the count when counterControls emits an add event', () => {
